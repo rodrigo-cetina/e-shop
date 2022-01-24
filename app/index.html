@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" ng-app="eShopApp">
+  <head>
+    <meta charset="utf-8">
+    <title>E-Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app.animations.css" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
+    <script src "https://cdn.datatables.net/plug-ins/1.10.15/sorting/stringMonthYear.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app.animations.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/checkmark/checkmark.filter.js"></script>
+    <script src="core/phone/phone.module.js"></script>
+    <script src="core/phone/phone.service.js"></script>
+    <script src="core/product/product.module.js"></script>
+    <script src="core/product/product.service.js"></script>
+    <script src="phone-list/phone-list.module.js"></script>
+    <script src="phone-list/phone-list.component.js"></script>
+    <script src="phone-detail/phone-detail.module.js"></script>
+    <script src="phone-detail/phone-detail.component.js"></script>
+    <script src="pages/home/home.module.js"></script>
+    <script src="pages/home/home.component.js"></script>
+    <script src="pages/shop/shop.module.js"></script>
+    <script src="pages/shop/shop.component.js"></script>
+    <script src="pages/shop/product-details/product-details.module.js"></script>
+    <script src="pages/shop/product-details/product-details.component.js"></script>
+    <script src="pages/products/products.module.js"></script>
+    <script src="pages/products/products.component.js"></script>
+    <script src="pages/basket/basket.module.js"></script>
+    <script src="pages/basket/basket.component.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse rounded-0">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">E-Shop</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          
+          <ul class="nav navbar-nav">
+            <li><a href="#">Shop <span class="sr-only">(current)</span></a></li>
+            <li><a href="#!/products">Products</a></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rodrigo Cetina <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <a class="navbar-brand navbar-right" href="#!/basket">
+            <i class="fa fa-shopping-cart"></i>
+          </a>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="view-container">
+      <div ng-view></div>
+    </div>
+
+  </body>
+</html>

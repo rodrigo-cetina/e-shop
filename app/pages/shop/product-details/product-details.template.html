@@ -1,0 +1,45 @@
+<header class="container-fluid">
+  <div class="container">
+    
+    <div class="row d-flex align-items-center">
+      <div class="col-xs-12 col-sm-6">
+        <h1>{{$ctrl.product.name}}</h1>
+      </div>
+      <ol class="col-xs-12 col-sm-6 text-right breadcrumb">
+        <li><a href="#!/shop">Shop</a></li>
+        <li class="active">{{$ctrl.product.name}}</li>
+      </ol>
+    </div>
+
+  </div>
+</header>
+
+<div class="content-sm">
+
+  <div class="row">
+    
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+      <img class="img-fluid w-100" style="max-height: 400px; object-fit: contain;" ng-src="{{$ctrl.product.imageUrl}}">
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+      
+      <h3>{{$ctrl.product.name}}</h3>
+      <p style="font-size: 2em;">{{$ctrl.product.price | currency}}</p>
+
+      <div class="d-flex justify-content-start align-items-center">
+        <i ng-click="$ctrl.decrementQuantity()" class="fa fa-minus-circle text-warning mr-2" style="cursor: pointer; font-size: 2em;"></i>
+        <span class="font-weight-bold" style="font-size: 1.5em;">{{$ctrl.productBasket.quantity}}</span>
+        <i ng-click="$ctrl.incrementQuantity()" class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size: 2em;"></i>
+        <button ng-click="$ctrl.addProductToBasket($ctrl.productBasket)" class="btn btn-primary btn-lg ml-4">Add to Cart</button>
+        <i ng-if="$ctrl.messageSaved" class="fa fa-check-circle text-success mx-2" style="font-size: 1.5em;"> Saved</i>
+      </div>
+
+      <h4>Description</h4>
+
+      <p style="margin-bottom: 50px;">{{$ctrl.product.description}}</p>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,164 @@
+[
+    {
+        "sku": "11110000",
+        "name": "Angular Speedster Board 2000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 1000,
+        "brand": "Angular",
+        "type": "Boards",
+        "imageUrl": "assets/img/products/sb-ang1.png"
+    },
+    {
+        "sku": "11110001",
+        "name": "Core Board Speed Rush 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 1000,
+        "brand": "Core",
+        "type": "Boards",
+        "imageUrl": "assets/img/products/sb-core1.png"
+    },
+    {
+        "sku": "11110002",
+        "name": "Green Angular Board 3000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 1000,
+        "brand": "Angular",
+        "type": "Boards",
+        "imageUrl": "assets/img/products/sb-ang2.png"
+    },
+    {
+        "sku": "11110003",
+        "name": "Net Core Super Board",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 1000,
+        "brand": "NetCore",
+        "type": "Boards",
+        "imageUrl": "assets/img/products/sb-core2.png"
+    },
+    {
+        "sku": "11110004",
+        "name": "React Board Super Whizzy Fast",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 1000,
+        "brand": "React",
+        "type": "Boards",
+        "imageUrl": "assets/img/products/sb-react1.png"
+    },
+    {
+        "sku": "11110005",
+        "name": "Typescript Entry Board",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 1000,
+        "brand": "Typescript",
+        "type": "Boards",
+        "imageUrl": "assets/img/products/sb-ts1.png"
+    },
+    {
+        "sku": "22220000",
+        "name": "Angular Blue Boots",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 500,
+        "brand": "Angular",
+        "type": "Boots",
+        "imageUrl": "assets/img/products/boot-ang1.png"
+    },
+    {
+        "sku": "22220001",
+        "name": "Angular Purple Boots",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 500,
+        "brand": "Angular",
+        "type": "Boots",
+        "imageUrl": "assets/img/products/boot-ang2.png"
+    },
+    {
+        "sku": "22220002",
+        "name": "Core Purple Boots",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 500,
+        "brand": "NetCore",
+        "type": "Boots",
+        "imageUrl": "assets/img/products/boot-core1.png"
+    },
+    {
+        "sku": "22220003",
+        "name": "Core Red Boots",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 500,
+        "brand": "NetCore",
+        "type": "Boots",
+        "imageUrl": "assets/img/products/boot-core2.png"
+    },
+    {
+        "sku": "22220004",
+        "name": "Redis Red Boots",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 500,
+        "brand": "Redis",
+        "type": "Boots",
+        "imageUrl": "assets/img/products/boot-redis1.png"
+    },
+    {
+        "sku": "33330000",
+        "name": "Blue Code Gloves",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 100,
+        "brand": "VS Code",
+        "type": "Gloves",
+        "imageUrl": "assets/img/products/glove-code1.png"
+    },
+    {
+        "sku": "33330001",
+        "name": "Green Code Gloves",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 100,
+        "brand": "VS Code",
+        "type": "Gloves",
+        "imageUrl": "assets/img/products/glove-code2.png"
+    },
+    {
+        "sku": "33330002",
+        "name": "Green React Gloves",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 100,
+        "brand": "React",
+        "type": "Gloves",
+        "imageUrl": "assets/img/products/glove-react1.png"
+    },
+    {
+        "sku": "33330003",
+        "name": "Purple React Gloves",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 100,
+        "brand": "React",
+        "type": "Gloves",
+        "imageUrl": "assets/img/products/glove-react2.png"
+    },
+    {
+        "sku": "44440000",
+        "name": "Core Blue Hat",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 100,
+        "brand": "NetCore",
+        "type": "Hats",
+        "imageUrl": "assets/img/products/hat-core1.png"
+    },
+    {
+        "sku": "44440001",
+        "name": "Green React Woolen Hat",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 100,
+        "brand": "React",
+        "type": "Hats",
+        "imageUrl": "assets/img/products/hat-react1.png"
+    },
+    {
+        "sku": "44440002",
+        "name": "Purple React Woolen Hat",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat quam et justo dictum posuere. In sit amet egestas erat. Quisque non fermentum dui. Morbi pretium sagittis feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque massa neque, luctus eget semper et, eleifend vel magna. Vestibulum non massa sagittis, consectetur metus ac, lobortis massa.",
+        "price": 100,
+        "brand": "React",
+        "type": "Hats",
+        "imageUrl": "assets/img/products/hat-react2.png"
+    }
+]

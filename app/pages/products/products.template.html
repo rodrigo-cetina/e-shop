@@ -1,0 +1,51 @@
+<header class="container-fluid">
+  <div class="container">
+    
+    <div class="row d-flex align-items-center">
+      <div class="col-xs-6">
+        <h1>Products</h1>
+      </div>
+      <div class="col-xs-6 text-right px-0">
+        <button class="btn btn-primary">
+          Create
+        </button>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<div class="container content">
+  
+  <div class="row">
+    <div class="container"> 
+      
+      <table class="table responsive" id="sort">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">SKU</th>
+            <th scope="col" class="text-center">Price</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Type</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="product in $ctrl.products">
+            <td data-table-header="Product">{{product.name}}</td>
+            <td data-table-header="SKU">{{product.sku}}</td>
+            <td data-table-header="Price" class="text-right">{{product.price | currency}}</td>
+            <td data-table-header="Brand">{{product.brand}}</td>
+            <td data-table-header="Type">{{product.type}}</td>
+            <td data-table-header="Actions">
+              <a href="" title="Edit"><i aria-hidden="true" class="fa fa-pencil">&nbsp;</i></a>
+              <a href="" title="Delete"><i aria-hidden="true" class="fa fa-trash-o">&nbsp;</i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

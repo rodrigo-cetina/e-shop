@@ -1,0 +1,77 @@
+<header class="container-fluid">
+  <div class="container">
+    
+    <div class="row d-flex align-items-center">
+      <div class="col-xs-12 col-sm-6">
+        <h1>Basket</h1>
+      </div>
+      <ol class="col-xs-12 col-sm-6 text-right breadcrumb">
+        <li><a href="#!/shop">Shop</a></li>
+        <li class="active">Basket</li>
+      </ol>
+    </div>
+
+  </div>
+</header>
+
+<div class="container content">
+
+  <div class="row">
+    <div class="container"> 
+      
+      <table class="table responsive" id="sort">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col" class="text-center">Price</th>
+            <th scope="col" class="text-center">Quantity</th>
+            <th scope="col" class="text-center">Total</th>
+            <th scope="col" class="text-center">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="product in $ctrl.productsBasket">
+            <td data-table-header="Product">{{product.name}}</td>
+            <td data-table-header="Price" class="text-right">{{product.price | currency}}</td>
+            <td data-table-header="Quantity" class="text-center">{{product.quantity}}</td>
+            <td data-table-header="Total" class="text-right">{{product.total | currency}}</td>
+            <td data-table-header="Action" class="text-center"><a href="" title="Remove"><i aria-hidden="true" class="fa fa-trash-o">&nbsp;</i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-6  col-sm-offset-6">
+      
+      <div class="bg-light px-4 py-3 text-uppercase font-weight-bold">
+        Order Summary
+      </div>
+      
+      <div class="p-4">
+        <p class="font-italic mb-4">Shipping costs will be added depending on choices made during checkout</p>
+        <ul class="list-unstyled mb-4">
+          <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Order subtotal</strong>
+            <strong>{{$ctrl.totalBasket | currency}}</strong>
+          </li>
+          <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Shipping and handling</strong>
+            <strong>{{0 | currency}}</strong>
+          </li>
+          <li class="d-flex justify-content-between py-3 border-bottom">
+            <strong class="text-muted">Total</strong>
+            <strong>{{$ctrl.totalBasket | currency}}</strong>
+          </li>
+        </ul>
+      </div>
+
+      <a href="" class="btn btn-success btn-block py-2">
+        Proceed to checkout
+      </a>
+
+    </div>
+  </div>
+
+</div>
