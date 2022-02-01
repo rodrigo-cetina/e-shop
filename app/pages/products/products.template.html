@@ -6,7 +6,10 @@
         <h1>Products</h1>
       </div>
       <div class="col-xs-6 text-right px-0">
-        <button class="btn btn-primary">
+        <button 
+          class="btn btn-primary"
+          ng-click="$ctrl.open()"
+        >
           Create
         </button>
       </div>
@@ -28,7 +31,7 @@
             <th scope="col" class="text-center">Price</th>
             <th scope="col">Brand</th>
             <th scope="col">Type</th>
-            <th scope="col">Actions</th>
+            <th scope="col" class="text-center">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -38,9 +41,23 @@
             <td data-table-header="Price" class="text-right">{{product.price | currency}}</td>
             <td data-table-header="Brand">{{product.brand}}</td>
             <td data-table-header="Type">{{product.type}}</td>
-            <td data-table-header="Actions">
-              <a href="" title="Edit"><i aria-hidden="true" class="fa fa-pencil">&nbsp;</i></a>
-              <a href="" title="Delete"><i aria-hidden="true" class="fa fa-trash-o">&nbsp;</i></a>
+            <td data-table-header="Actions" class="text-center">
+              <a 
+                class="btn-action"
+                href="" 
+                title="Edit"
+                ng-click="$ctrl.open(product)"
+              >
+                <i aria-hidden="true" class="fa fa-pencil fa-lg">&nbsp;</i>
+              </a>
+              <a 
+                class="btn-action"
+                href="" 
+                title="Delete"
+                ng-click="$ctrl.deleteProduct(product)"
+              >
+                <i aria-hidden="true" class="fa fa-trash-o fa-lg">&nbsp;</i>
+              </a>
             </td>
           </tr>
         </tbody>

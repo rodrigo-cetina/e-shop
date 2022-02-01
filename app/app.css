@@ -3,9 +3,13 @@ body {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 24px;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 16px;
 }
 
 header {
@@ -44,6 +48,10 @@ header {
 
 .w-100 {
   width: 100%;
+}
+
+.mt-2 {
+  margin-top: 1.5rem !important;
 }
 
 .ml-4 {
@@ -126,12 +134,16 @@ header {
 }
 
 a.thumbnail {
+  border-radius: 10px;
   padding: 0px;
   text-decoration: none;
 }
 
 .thumbnail img {
-  background-color: #17a2b8 !important;
+  background-color: #0891b2 !important;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  padding: 20px;
 }
 
 .thumbnail .caption {
@@ -139,9 +151,18 @@ a.thumbnail {
   max-height: 100px;
 }
 
+.product-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .bg-light {
   --bs-bg-opacity:1;
   background-color: rgba(248,249,250,var(--bs-bg-opacity))!important
+}
+
+.btn-action {
+  text-decoration: none !important
 }
 
 /* View: Index */

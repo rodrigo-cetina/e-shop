@@ -49,6 +49,10 @@ angular.
         );
       }
 
+      productService.getAllBrands = function() {
+        return productService.brands;
+      }
+
       //types
       if (localStorageService.get(productService.keyTypes)) {
         productService.types = localStorageService.get(productService.keyTypes);
@@ -62,6 +66,10 @@ angular.
             console.log(response.data);
           }
         );
+      }
+
+      productService.getAllTypes = function() {
+        return productService.types;
       }
 
       //products
@@ -93,8 +101,19 @@ angular.
         })[0];
       }
 
-      productService.addProduct = function(newProduct) {
-        productService.products.push(newProduct);
+      productService.saveProduct = function(product) {
+        const index = productService.products.findIndex(item => item.sku === product.sku);
+        if (index >= 0) {
+          //update
+          productService.products = [
+            ...productService.products.slice(0, index),
+            product,
+            ...productService.products.slice(index + 1),
+          ];
+        } else {
+          //add
+          productService.products.push(product);
+        }
         productService.updateLocalStorageProducts();
       }
 
@@ -103,7 +122,12 @@ angular.
           return item.sku !== product.sku
         });
         productService.updateLocalStorageProducts();
-        return productService.getAll();
+        return productService.getAllProducts();
+      }
+
+      productService.deleteAllProducts = function() {
+        productService.products = [];
+        productService.updateLocalStorageProducts();
       }
 
       //basket
@@ -163,10 +187,16 @@ angular.
           return item.sku !== product.sku
         });
         productService.updateLocalStorageBasket();
-        return productService.getAllFromBasket();
+        return productService.getAllProductsFromBasket();
+      }
+
+      productService.deleteAllProductsFromBasket = function() {
+        productService.basket = [];
+        productService.updateLocalStorageBasket();
       }
 
       productService.calculateOrderSummary = function() {
+        if (productService.basket.length === 0) return 0;
         return productService.basket.map(function amount(item){
           return item.total;
         }).reduce(function sum(prev, next){

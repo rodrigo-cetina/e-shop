@@ -17,6 +17,9 @@ angular.
         when('/basket', {
           template: '<basket></basket>'
         }).
+        when('/payment', {
+          template: '<payment></payment>'
+        }).
         when('/products', {
           template: '<products></products>'
         }).

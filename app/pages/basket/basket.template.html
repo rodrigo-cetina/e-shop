@@ -35,7 +35,15 @@
             <td data-table-header="Price" class="text-right">{{product.price | currency}}</td>
             <td data-table-header="Quantity" class="text-center">{{product.quantity}}</td>
             <td data-table-header="Total" class="text-right">{{product.total | currency}}</td>
-            <td data-table-header="Action" class="text-center"><a href="" title="Remove"><i aria-hidden="true" class="fa fa-trash-o">&nbsp;</i></a></td>
+            <td data-table-header="Action" class="text-center">
+              <a 
+                href="" 
+                title="Remove" 
+                ng-click="$ctrl.deleteProductFromBasket(product)"
+              >
+                <i aria-hidden="true" class="fa fa-trash-o">&nbsp;</i>
+              </a>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -67,7 +75,7 @@
         </ul>
       </div>
 
-      <a href="" class="btn btn-success btn-block py-2">
+      <a ng-if="$ctrl.productsBasket.length > 0" href="#!/payment" class="btn btn-success btn-block py-2">
         Proceed to checkout
       </a>
 
